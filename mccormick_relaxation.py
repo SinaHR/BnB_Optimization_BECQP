@@ -385,20 +385,6 @@ def node_upper_bound(n: int,
                         result=best_res,
                         start_index=best_idx)
 
-# --- Example usage (commented) ---
-# if __name__ == "__main__":
-#     n = 3; m = 2
-#     c = [1, 1, 0]
-#     b = [8, 15]
-#     A = np.zeros((m, n)); A[0, 2] = 1
-#     H = np.zeros((n, n)); H[2, 2] = 1
-#     Q1 = np.zeros((n, n)); Q1[0, 1] = Q1[1, 0] = 0.5
-#     Q2 = np.zeros((n, n)); Q2[1, 2] = Q2[2, 1] = 0.5
-#     Q = np.dstack((Q1, Q2))
-#     lb = [0, 0, 0]; ub = [10, 10, 10]
-#     ub_res = node_upper_bound(n, m, c, H, Q, A, b, lb, ub, extra_starts=30, verbose=True)
-#     print(ub_res)
-
 
 # =========================
 # Pipeline
