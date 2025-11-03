@@ -12,14 +12,6 @@ It provides:
   * An advanced version with bound tightening and strong branching
 
 ---
-Right — that happens because GitHub Markdown doesn’t support real math layout, so everything inside a code block stays on one line unless we use **line breaks manually**.
-
-The best fix is to format the math section with **plain Markdown alignment**, not inside a single code block — one equation per line, like a readable text table.
-
-Here’s the **final GitHub-friendly version** of the math section (only that part changed).
-You can replace your existing *“Problem Formulation”* section with this block — it will render cleanly and multiline on GitHub without needing LaTeX support.
-
----
 
 ## 🧮 Problem Formulation
 
