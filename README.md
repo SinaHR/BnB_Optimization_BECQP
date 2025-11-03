@@ -1,5 +1,3 @@
----
-
 # QCQP Node Bounds and Branch & Bound Solver
 
 This project implements a **Branch & Bound global optimization framework** for **Quadratically Constrained Quadratic Programs (QCQPs)** that contain **bilinear (nonconvex)** equality constraints.
@@ -19,13 +17,12 @@ It provides:
 
 The solver handles QCQPs of the form:
 
-[
 \begin{aligned}
 \min_x \quad & f(x) = x^\top H x + c^\top x \
 \text{s.t.} \quad & g_k(x) = x^\top Q_k x + A_k x - b_k = 0, \quad k = 1,\dots,m, \
 & lb \le x \le ub
 \end{aligned}
-]
+
 
 Each (Q_k) must be **symmetric with zero diagonal**, meaning the constraints contain **only bilinear terms** ((x_i x_j, i \neq j)).
 All variable bounds must be **finite** to construct McCormick envelopes.
